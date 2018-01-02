@@ -13,6 +13,17 @@ class ViewController: UIViewController {
     //Model
     var logic = Calculator()
     
+    var equalHit = false {
+        didSet {
+            if equalHit == true {
+                clearInputLabel()
+                equalHit = false
+            }
+        }
+    }
+    
+    var oldResult = ""
+    
     //UI Refs
     @IBOutlet weak var resultLabel: UILabel!
 
@@ -20,17 +31,32 @@ class ViewController: UIViewController {
     
     //UI Events
     @IBAction func onClick(_ sender: UIButton) {
-        let btnTxt = sender.titleLabel?.text!
+        var btnTxt = sender.titleLabel?.text!
+        resultLabel.text = ""
         switch btnTxt! {
         case "C":
             clearInputLabel()
+            oldResult = ""
             break
         case "=":
-            let result = logic.comput(value:inputLabel.text!)
+            let result = logic.comput(value:oldResult + inputLabel.text!)
             resultLabel.text = result
+            oldResult = result!
+            equalHit = true
+            btnTxt = ""
             break
         case "del":
             clearInputLabel()
+            oldResult = ""
+            break
+        case "e":
+            btnTxt = "2.71828"
+            break
+        case "π":
+            btnTxt = "3.14159"
+            break
+        case "rand":
+            btnTxt = String(arc4random())
             break
         default:
             break
@@ -47,7 +73,7 @@ class ViewController: UIViewController {
     }
     
     func appendLabel(value : String) {
-        inputLabel.text?.append(" " + value)
+        inputLabel.text?.append(value)
         formalLabel()
         if inputLabel.text!.contains("C") || inputLabel.text!.contains("del"){
             clearInputLabel()
