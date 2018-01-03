@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         }
     }
     
-    var oldResult = ""
+    //var oldResult = ""
     
     //UI Refs
     @IBOutlet weak var resultLabel: UILabel!
@@ -36,18 +36,26 @@ class ViewController: UIViewController {
         switch btnTxt! {
         case "C":
             clearInputLabel()
-            oldResult = ""
+            logic.oldResult = ""
+            //oldResult = ""
             break
         case "=":
-            let result = logic.comput(value:oldResult + inputLabel.text!)
+//            print("old: " + oldResult)
+//            print("cur: " + inputLabel.text!)
+            let result = logic.comput(value:inputLabel.text!)
             resultLabel.text = result
-            oldResult = result!
+//            oldResult = result!
             equalHit = true
             btnTxt = ""
             break
         case "del":
+            var oldtxt = inputLabel.text!
+            if oldtxt.count < 1 {
+                break
+            }
+            oldtxt.remove(at: oldtxt.index(before: oldtxt.endIndex))
             clearInputLabel()
-            oldResult = ""
+            btnTxt = oldtxt
             break
         case "e":
             btnTxt = "2.71828"
@@ -72,7 +80,7 @@ class ViewController: UIViewController {
         inputLabel.text = finaltxt
     }
     
-    func appendLabel(value : String) {
+    private func appendLabel(value : String) {
         inputLabel.text?.append(value)
         formalLabel()
         if inputLabel.text!.contains("C") || inputLabel.text!.contains("del"){
@@ -80,10 +88,9 @@ class ViewController: UIViewController {
         }
     }
     
-    func clearInputLabel(){
+    private func clearInputLabel(){
         inputLabel.text = ""
     }
-    
-    
+
 }
 

@@ -16,24 +16,39 @@ import Foundation
 
 
 struct Calculator {
+    
+    var oldResult = "" 
+    
    
     // Base Method
-    func comput(value : String) -> String?  {
+    mutating func comput(value : String) -> String?  {
         let expression = extractBaseExpression(val: value)
+        var parsedExpression : String
+        
+        if oldResult.count > 1 && !isValidExpression(expression: value){ //Ex: 81 + 4
+            if value.contains("cos") { //Edge Case
+                oldResult = String(cos(Double(getResult(value: expression))!))
+                return oldResult
+            }
+            oldResult = getResult(value: oldResult + value)
+            return oldResult
+        }
         if value.contains("sqrt") {
-            let parsedExpression = "sqrt(" + expression + ")"
-            return getResult(value : parsedExpression)
+            parsedExpression = "sqrt(" + expression + ")"
+            oldResult = getResult(value : parsedExpression)
         }
         else if value.contains("cos") {
-            return String(cos(Double(getResult(value: expression))!))
+            oldResult = String(cos(Double(getResult(value: expression))!))
+            //return String(cos(Double(getResult(value: expression))!))
         }
         else if value.contains("sqr"){
-            let parsedExpression = expression + "*" + expression 
-            return getResult(value : parsedExpression)
+            parsedExpression = expression + "*" + expression
+            oldResult = getResult(value : parsedExpression)
         }
         else {
-            return getResult(value: expression)
+            oldResult = getResult(value: expression)
         }
+        return oldResult
         
     }
     //Helpers
@@ -45,13 +60,23 @@ struct Calculator {
     
     private func getResult(value : String) -> String {
         if !isValidExpression(expression: value){
-            return value
+            return "error in syntax: " + value
         }
         let mathExpression = NSExpression(format: value)
         let mathValue = mathExpression.expressionValue(with: nil, context: nil) as? Double
         return String(describing: mathValue!)
     }
-    private func isValidExpression(expression : String) -> Bool {
+    func isValidExpression(expression : String) -> Bool {
+        print(expression)
+        if expression.contains("sqrt"){
+            return true
+        }
+        else if expression.count < 3 {
+            return false
+        }
+        else if expression.contains("e"){
+            return false
+        }
         //Remove spaces
         let value = expression.replacingOccurrences(of: " ", with: "")
         //Check if two non-number characters exist
