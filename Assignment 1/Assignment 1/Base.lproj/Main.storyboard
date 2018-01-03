@@ -50,7 +50,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raK-6N-p0X">
                                                 <rect key="frame" x="69" y="0.0" width="67" height="98"/>
-                                                <state key="normal" title="X^-1"/>
+                                                <state key="normal" title="a⁻¹"/>
                                                 <connections>
                                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wh-BU-Anb"/>
                                                 </connections>

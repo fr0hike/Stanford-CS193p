@@ -22,6 +22,7 @@ struct Calculator {
    
     // Base Method
     mutating func comput(value : String) -> String?  {
+        print(oldResult)
         let expression = extractBaseExpression(val: value)
         var parsedExpression : String
         
@@ -30,7 +31,7 @@ struct Calculator {
                 oldResult = String(cos(Double(getResult(value: expression))!))
                 return oldResult
             }
-            oldResult = getResult(value: oldResult + value)
+            oldResult = getResult(value: oldResult + expression)
             return oldResult
         }
         if value.contains("sqrt") {
@@ -39,11 +40,17 @@ struct Calculator {
         }
         else if value.contains("cos") {
             oldResult = String(cos(Double(getResult(value: expression))!))
-            //return String(cos(Double(getResult(value: expression))!))
         }
         else if value.contains("sqr"){
             parsedExpression = expression + "*" + expression
             oldResult = getResult(value : parsedExpression)
+        }
+        else if value.contains("a⁻¹"){
+            let base = Double(expression)!
+            print(base)
+            oldResult = String(pow(base, -1.0))
+            print(expression)
+            return oldResult
         }
         else {
             oldResult = getResult(value: expression)
@@ -53,9 +60,12 @@ struct Calculator {
     }
     //Helpers
     private func extractBaseExpression(val : String) -> String {
-        return val.replacingOccurrences(of: "sqrt", with: "").replacingOccurrences(of: "cos", with: "")
-            .replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "x", with: "*", options: .literal, range: nil)
-        .replacingOccurrences(of: "sqr", with: "")
+        return val.replacingOccurrences(of: "a⁻¹", with: "")
+                    .replacingOccurrences(of: "sqrt", with: "")
+                    .replacingOccurrences(of: "cos", with: "")
+                    .replacingOccurrences(of: " ", with: "")
+                    .replacingOccurrences(of: "x", with: "*", options: .literal, range: nil)
+                    .replacingOccurrences(of: "sqr", with: "")
     }
     
     private func getResult(value : String) -> String {

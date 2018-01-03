@@ -65,7 +65,7 @@ class ViewController: UIViewController {
             break
         case "rand":
             btnTxt = String(arc4random())
-            break
+            break  
         default:
             break
         }
