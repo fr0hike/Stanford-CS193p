@@ -22,8 +22,6 @@ class ViewController: UIViewController {
         }
     }
     
-    //var oldResult = ""
-    
     //UI Refs
     @IBOutlet weak var resultLabel: UILabel!
 
@@ -37,14 +35,10 @@ class ViewController: UIViewController {
         case "C":
             clearInputLabel()
             logic.oldResult = ""
-            //oldResult = ""
             break
         case "=":
-//            print("old: " + oldResult)
-//            print("cur: " + inputLabel.text!)
             let result = logic.comput(value:inputLabel.text!)
             resultLabel.text = result
-//            oldResult = result!
             equalHit = true
             btnTxt = ""
             break
@@ -75,9 +69,8 @@ class ViewController: UIViewController {
     //Helper Methods
     fileprivate func formalLabel() {
         let txt = inputLabel.text!
-        let newtext = txt.replacingOccurrences(of: ". ", with: ".", options: .literal, range: nil)
-        let finaltxt = newtext.replacingOccurrences(of: " .", with: ".", options: .literal, range: nil)
-        inputLabel.text = finaltxt
+        inputLabel.text = txt.replacingOccurrences(of: ". ", with: ".", options: .literal, range: nil)
+        .replacingOccurrences(of: " .", with: ".", options: .literal, range: nil)
     }
     
     private func appendLabel(value : String) {
@@ -91,6 +84,5 @@ class ViewController: UIViewController {
     private func clearInputLabel(){
         inputLabel.text = ""
     }
-
 }
 
