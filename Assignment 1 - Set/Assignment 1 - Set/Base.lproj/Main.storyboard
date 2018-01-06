@@ -53,6 +53,9 @@
                                                 <size key="value" width="0.0" height="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3s4-2Q-tR4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpY-PS-ECq">
                                         <rect key="frame" x="233.33333333333329" y="0.0" width="56.666666666666657" height="36"/>
@@ -68,9 +71,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-iY-QIb">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-Je-vno" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-Je-vno" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275906735753" green="0.85496275906735753" blue="0.85496275906735753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -79,10 +82,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fo8-0B-GCL"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-9R-axG" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-9R-axG" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -91,10 +97,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSi-Qz-Zj8"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSo-4I-fUG" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSo-4I-fUG" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -103,10 +112,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgE-jx-qpS"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6G-62-K46" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6G-62-K46" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -115,15 +127,18 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lwu-fm-Rm9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-sn-3Vm">
                                         <rect key="frame" x="0.0" y="97" width="374" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy3-lC-zO2" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy3-lC-zO2" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -132,10 +147,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk3-QD-22R"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4E-eG-2Fj" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4E-eG-2Fj" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -144,10 +162,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Yd-rx-wnx"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-Af-UW0" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-Af-UW0" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -156,10 +177,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1e6-2s-DaY"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-bt-5ud" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-bt-5ud" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -168,15 +192,18 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oa-kP-eLy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ii3-Og-bvH">
                                         <rect key="frame" x="0.0" y="194" width="374" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-I9-4dM" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-I9-4dM" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -185,10 +212,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ak-Xm-aLr"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-u4-kR1" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-u4-kR1" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -197,10 +227,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDs-5w-EeP"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxj-Wo-U7g" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxj-Wo-U7g" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -209,10 +242,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0Z-0e-raI"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMI-Aq-l2l" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMI-Aq-l2l" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -221,15 +257,18 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwR-z0-dSU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-oh-lbA">
                                         <rect key="frame" x="0.0" y="291" width="374" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-Wh-4RW" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-Wh-4RW" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -238,10 +277,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3K-G9-q2z"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvX-rh-Am0" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvX-rh-Am0" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -250,10 +292,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SdY-2b-lxv"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-Xg-d0u" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-Xg-d0u" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -262,10 +307,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SlL-RP-5yd"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-TD-fkJ" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-TD-fkJ" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -274,15 +322,18 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HcD-52-LEO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WUz-e5-2YH">
                                         <rect key="frame" x="0.0" y="388" width="374" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MH-aU-hFb" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MH-aU-hFb" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -291,10 +342,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pna-TH-gHw"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUF-S5-As5" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUF-S5-As5" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -303,10 +357,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ab3-dZ-JeV"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xJ-o9-PeD" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xJ-o9-PeD" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -315,10 +372,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pK-8M-r1T"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psG-BR-aDx" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psG-BR-aDx" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -327,15 +387,18 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dTg-0l-pGO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zCb-c6-b5o">
                                         <rect key="frame" x="0.0" y="485" width="374" height="89"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfc-qt-wcS" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfc-qt-wcS" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -344,10 +407,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6WZ-oz-Rrq"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DN-7Q-Mba" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DN-7Q-Mba" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -356,10 +422,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6r-qZ-8nT"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-ch-Jb4" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-ch-Jb4" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -368,10 +437,13 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3le-QH-bJN"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyY-51-Tly" customClass="DesignableButton" customModule="Assignment_1___Set">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyY-51-Tly" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
                                                 <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
-                                                <color key="backgroundColor" red="0.85496275909999997" green="0.85496275909999997" blue="0.85496275909999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -380,6 +452,9 @@
                                                         <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setCardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuZ-8y-SR1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -415,6 +490,35 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="flipLabel" destination="rZx-JC-Q9j" id="OdF-Mv-9YI"/>
+                        <outlet property="scoreLabel" destination="IpY-PS-ECq" id="TVe-Ys-4gu"/>
+                        <outlet property="setLabel" destination="WQF-ZC-Lg1" id="Lhs-Ba-Up0"/>
+                        <outletCollection property="setCardCollection" destination="N6G-62-K46" collectionClass="NSMutableArray" id="JwK-wb-Rfd"/>
+                        <outletCollection property="setCardCollection" destination="E4E-eG-2Fj" collectionClass="NSMutableArray" id="8Bi-Up-Loi"/>
+                        <outletCollection property="setCardCollection" destination="A9R-9R-axG" collectionClass="NSMutableArray" id="qvn-Gj-v5L"/>
+                        <outletCollection property="setCardCollection" destination="xID-Je-vno" collectionClass="NSMutableArray" id="mzQ-IL-pbO"/>
+                        <outletCollection property="setCardCollection" destination="KSo-4I-fUG" collectionClass="NSMutableArray" id="B3H-L2-JFx"/>
+                        <outletCollection property="setCardCollection" destination="zy3-lC-zO2" collectionClass="NSMutableArray" id="JFm-DZ-vc8"/>
+                        <outletCollection property="setCardCollection" destination="xLa-Af-UW0" collectionClass="NSMutableArray" id="68B-qa-JlX"/>
+                        <outletCollection property="setCardCollection" destination="eiL-bt-5ud" collectionClass="NSMutableArray" id="bvj-gG-VLs"/>
+                        <outletCollection property="setCardCollection" destination="vWx-I9-4dM" collectionClass="NSMutableArray" id="18F-Op-DS4"/>
+                        <outletCollection property="setCardCollection" destination="5lD-u4-kR1" collectionClass="NSMutableArray" id="raG-E5-cbr"/>
+                        <outletCollection property="setCardCollection" destination="gxj-Wo-U7g" collectionClass="NSMutableArray" id="bCQ-Xx-yeM"/>
+                        <outletCollection property="setCardCollection" destination="DMI-Aq-l2l" collectionClass="NSMutableArray" id="XeD-Su-S56"/>
+                        <outletCollection property="setCardCollection" destination="VDK-Wh-4RW" collectionClass="NSMutableArray" id="maF-1C-JMm"/>
+                        <outletCollection property="setCardCollection" destination="BvX-rh-Am0" collectionClass="NSMutableArray" id="BbK-sr-KaY"/>
+                        <outletCollection property="setCardCollection" destination="7yH-Xg-d0u" collectionClass="NSMutableArray" id="vY1-Ha-vxa"/>
+                        <outletCollection property="setCardCollection" destination="9Vz-TD-fkJ" collectionClass="NSMutableArray" id="GYu-Pe-T1F"/>
+                        <outletCollection property="setCardCollection" destination="2MH-aU-hFb" collectionClass="NSMutableArray" id="I9G-I0-gUk"/>
+                        <outletCollection property="setCardCollection" destination="NUF-S5-As5" collectionClass="NSMutableArray" id="eJQ-Ih-U80"/>
+                        <outletCollection property="setCardCollection" destination="6xJ-o9-PeD" collectionClass="NSMutableArray" id="M1G-8Q-EkL"/>
+                        <outletCollection property="setCardCollection" destination="psG-BR-aDx" collectionClass="NSMutableArray" id="hU9-yV-Oyz"/>
+                        <outletCollection property="setCardCollection" destination="Gfc-qt-wcS" collectionClass="NSMutableArray" id="iXc-5X-yHC"/>
+                        <outletCollection property="setCardCollection" destination="3DN-7Q-Mba" collectionClass="NSMutableArray" id="sDg-RL-z9c"/>
+                        <outletCollection property="setCardCollection" destination="6FI-ch-Jb4" collectionClass="NSMutableArray" id="D2E-zy-mXg"/>
+                        <outletCollection property="setCardCollection" destination="oyY-51-Tly" collectionClass="NSMutableArray" id="iKG-2y-5nx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
