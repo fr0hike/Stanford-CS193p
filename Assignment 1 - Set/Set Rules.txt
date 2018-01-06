@@ -1,0 +1,20 @@
+General:
+
+1) 81 Cards
+2) Cards come in pairs of 3. One diamond, two diamong ... three "x"
+
+How to play:
+1.) Shuffle the deck
+2.) Place 12 cards out
+3.)
+
+Rules:
+1.) Sets are defined as:
+	> Dont need same color
+	> Fill must be different
+		>EX: All are green, one is empty, another has squiggles, another has lines in them
+	> In general, you want one thing to be the same about each card.
+		"All are the same shape"
+		"All are the same color"
+		"All have the same number of objects on the card"
+	... that is what is defined as a set

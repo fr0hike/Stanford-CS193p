@@ -72,6 +72,7 @@ struct Calculator {
         if !isValidExpression(expression: value){
             return "error in syntax: " + value
         }
+    
         let mathExpression = NSExpression(format: value)
         let mathValue = mathExpression.expressionValue(with: nil, context: nil) as? Double
         return String(describing: mathValue!)
