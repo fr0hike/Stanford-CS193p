@@ -9,10 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     //globals
-    var numDeltCards = 0
-    var deltSetCards = [SetCardButton]() //Delt cards holds used cards. We are using the same idea as a memory manager
+    var numberOfUnHiddenButtons = 11 //Default Value
+    var gameBrain = SetModel()
     //UI Elements
     @IBOutlet weak var setLabel: DesignableLabel!
     @IBOutlet weak var flipLabel: UILabel!
@@ -21,41 +20,52 @@ class ViewController: UIViewController {
     
     //On Click
     @IBAction func dealButton(_ sender: DesignableButton) {
-        var index = 0
-        for setCard in setCardButtonCollection {
-            if numDeltCards != 23,
-                index > numDeltCards && !(index > numDeltCards+3)   {
-                setCard.isHidden = false
+        
+        if numberOfUnHiddenButtons <= 23 { //Show hidden buttons
+            var numberOfIterations = 0
+            for index in  numberOfUnHiddenButtons...numberOfUnHiddenButtons + 3 {
+                if index <= (setCardButtonCollection.count - 1) {
+                    setCardButtonCollection[index].isHidden = false
+                    numberOfIterations += 1
+                }
             }
-            index += 1
+            numberOfUnHiddenButtons += numberOfIterations
         }
-        print(numDeltCards)
-        numDeltCards += 3
+        else { //Replace current
+            
+        }
+        print(numberOfUnHiddenButtons)
     }
     @IBAction func setCardClicked(_ sender: SetCardButton) {
+        var attributedString : NSAttributedString
+        let labelText = setLabel.attributedText
         sender.onSelect()
+        if(sender.wasButtonSelected){
+            attributedString = (sender.setCard?.textAttr!)!
+            setLabel.attributedText = concatStrings(left: labelText!, right: attributedString)
+        }
+        else {
+            
+        }
+        
+    }
+    func concatStrings(left: NSAttributedString, right: NSAttributedString) -> NSAttributedString{
+        let result = NSMutableAttributedString()
+        result.append(left)
+        result.append(right)
+        return result
     }
     override func viewDidLoad() {
+        //init SetCardButtons with SetCards
+        var index = 0
         for setCard in setCardButtonCollection {
-            print(numDeltCards)
-            if numDeltCards > 11 {
-                setCard.isHidden = true
-            }
-            numDeltCards += 1
+            setCard.defineSetCard(setCard: gameBrain.deltCards[index])
+            index += 1
         }
-        numDeltCards = 11
-        
-        
-        //Init 56 Additional Set Cards (81 Total at startup)
-        for _ in 0...56 {
-            setCardButtonCollection.append(SetCardButton())
+        //Hide half of them
+        for atPoint in 12...(setCardButtonCollection.count - 1) {
+            setCardButtonCollection[atPoint].isHidden = true
         }
-        //Now 12 are initally delt, so move them into the delt list
-//        for index in 0...23{
-//            let tempSetCard = setCardButtonCollection[index]
-//            setCardButtonCollection.remove(at: index)
-//            deltSetCards.append(tempSetCard)
-//        }
         super.viewDidLoad()
     }
     
@@ -68,19 +78,22 @@ class ViewController: UIViewController {
 @IBDesignable
 class SetCardButton: DesignableButton {
     var wasButtonSelected : Bool
-    var setCard : SetCard
+    var setCard : SetCard?
+    
+    func defineSetCard(setCard:SetCard){
+        self.setCard = setCard
+        setAttributedTitle(setCard.textAttr, for: UIControlState.normal)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         wasButtonSelected = false
-        setCard = SetCard()
         super.init(coder: aDecoder)
-        setAttributedTitle(setCard.textAttr, for: UIControlState.normal)
+        
         
     }
     override init(frame: CGRect) {
         wasButtonSelected = false
-        setCard = SetCard()
         super.init(frame: frame)
-        setAttributedTitle(setCard.textAttr, for: UIControlState.normal)
     }
     
     func onSelect() {
