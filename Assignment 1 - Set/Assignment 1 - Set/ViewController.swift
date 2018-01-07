@@ -12,18 +12,17 @@ class ViewController: UIViewController {
     
     //globals
     var numDeltCards = 0
-    
+    var deltSetCards = [SetCardButton]() //Delt cards holds used cards. We are using the same idea as a memory manager
     //UI Elements
     @IBOutlet weak var setLabel: DesignableLabel!
     @IBOutlet weak var flipLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet var setCardCollection: [SetCardButton]!
+    @IBOutlet var setCardButtonCollection: [SetCardButton]!
     
     //On Click
     @IBAction func dealButton(_ sender: DesignableButton) {
         var index = 0
-        for setCard in setCardCollection {
-            
+        for setCard in setCardButtonCollection {
             if numDeltCards != 23,
                 index > numDeltCards && !(index > numDeltCards+3)   {
                 setCard.isHidden = false
@@ -34,9 +33,10 @@ class ViewController: UIViewController {
         numDeltCards += 3
     }
     @IBAction func setCardClicked(_ sender: SetCardButton) {
+        sender.onSelect()
     }
     override func viewDidLoad() {
-        for setCard in setCardCollection {
+        for setCard in setCardButtonCollection {
             print(numDeltCards)
             if numDeltCards > 11 {
                 setCard.isHidden = true
@@ -44,6 +44,18 @@ class ViewController: UIViewController {
             numDeltCards += 1
         }
         numDeltCards = 11
+        
+        
+        //Init 56 Additional Set Cards (81 Total at startup)
+        for _ in 0...56 {
+            setCardButtonCollection.append(SetCardButton())
+        }
+        //Now 12 are initally delt, so move them into the delt list
+//        for index in 0...23{
+//            let tempSetCard = setCardButtonCollection[index]
+//            setCardButtonCollection.remove(at: index)
+//            deltSetCards.append(tempSetCard)
+//        }
         super.viewDidLoad()
     }
     
@@ -55,8 +67,33 @@ class ViewController: UIViewController {
 }
 @IBDesignable
 class SetCardButton: DesignableButton {
-    override func draw(_ rect: CGRect) {
+    var wasButtonSelected : Bool
+    var setCard : SetCard
+    required init?(coder aDecoder: NSCoder) {
+        wasButtonSelected = false
+        setCard = SetCard()
+        super.init(coder: aDecoder)
+        setAttributedTitle(setCard.textAttr, for: UIControlState.normal)
         
+    }
+    override init(frame: CGRect) {
+        wasButtonSelected = false
+        setCard = SetCard()
+        super.init(frame: frame)
+        setAttributedTitle(setCard.textAttr, for: UIControlState.normal)
+    }
+    
+    func onSelect() {
+        if !wasButtonSelected {
+            self.borderColor = UIColor.red
+            self.borderWidth = 5
+            wasButtonSelected = true
+        }
+        else {
+            self.borderColor = UIColor.black
+            self.borderWidth = 3
+            wasButtonSelected = false
+        }
     }
 }
 
@@ -159,27 +196,3 @@ extension UIView {
         }
     }
 }
-
-
-/**
- Lecture Example Code.
- 
- 
- #Create a UIBezierPath
- -- in over-ridden UIView
- draw() {...}
- let path = UIBezierPath()
- path.move(to: CGPoint(xx, yy))
- path.addLine(to: CGPoint(xx, yy))
- ..
- ...
- ....
- path.close
- 
- //Define Color
- UIColor.green.setFill()
- UIColor.red.setStroke()
- path.linewidth = 3.0
- path.fill()
- path.stroke()
- */
