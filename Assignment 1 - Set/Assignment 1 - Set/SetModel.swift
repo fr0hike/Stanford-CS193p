@@ -48,7 +48,38 @@ struct SetModel {
         return returnArry
     }
     
+    //If two are and one are not... not a set
     func matchCards(forArry: [SetCard]) -> Bool {
+        if sameColor(forArry: forArry) && sameSymbol(forArry: forArry) {
+            return true
+        }
+        else if !sameColor(forArry: forArry) && !sameSymbol(forArry: forArry)
+            && !sameCount(forArry: forArry) {
+            return true
+        }
+        return false
+    }
+    
+    private func sameColor(forArry: [SetCard]) -> Bool {
+        if forArry[0].color == forArry[1].color && forArry[1].color == forArry[2].color { //Same color
+            return true
+        }
+        return false
+    }
+    
+    private func sameSymbol(forArry: [SetCard]) -> Bool {
+        if forArry[0].text == forArry[1].text && forArry[1].text == forArry[2].text { //Same text & number
+            return true
+        }
+        return false
+    }
+    
+    private func sameCount(forArry: [SetCard]) -> Bool {
+        if forArry[0].howMany != forArry[1].howMany //Different numbers
+            && forArry[0].howMany != forArry[2].howMany
+            && forArry[1].howMany != forArry[2].howMany {
+            return false
+        }
         return true
     }
 }

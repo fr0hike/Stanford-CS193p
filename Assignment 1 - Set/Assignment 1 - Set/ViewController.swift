@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     var numberOfUnHiddenButtons = 11 //Default Value
     var gameBrain = SetModel()
     var labelTextBuilder = [NSAttributedString]()
+    var score = 0 {
+        didSet{
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
+    var flips = 0 {
+        didSet {
+            flipLabel.text = "Flips: \(flips)"
+        }
+    }
     var numberOfSelectedCards = 0 {
         didSet {
             var arr = [SetCard]()
@@ -23,6 +33,8 @@ class ViewController: UIViewController {
                     }
                 }
                 if gameBrain.matchCards(forArry:arr){
+                    score += 1
+                    flips += 1
                     setLabel.text = "Match"
                     numberOfSelectedCards = 0
                     for scb in setCardButtonCollection {
@@ -32,7 +44,14 @@ class ViewController: UIViewController {
                     }
                 }
                 else {
+                    score -= 1
                     setLabel.text = "Try again"
+                    for scb in setCardButtonCollection {
+                        if scb.wasButtonSelected {
+                            scb.onSelect()
+                        }
+                    }
+                    numberOfSelectedCards = 0
                 }
             }
             else {
