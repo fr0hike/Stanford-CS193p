@@ -12,6 +12,35 @@ class ViewController: UIViewController {
     //globals
     var numberOfUnHiddenButtons = 11 //Default Value
     var gameBrain = SetModel()
+    var labelTextBuilder = [NSAttributedString]()
+    var numberOfSelectedCards = 0 {
+        didSet {
+            var arr = [SetCard]()
+            if numberOfSelectedCards >= 3 {
+                for setCardButton in setCardButtonCollection {
+                    if setCardButton.wasButtonSelected {
+                        arr.append(setCardButton.setCard!)
+                    }
+                }
+                if gameBrain.matchCards(forArry:arr){
+                    setLabel.text = "Match"
+                    numberOfSelectedCards = 0
+                    for scb in setCardButtonCollection {
+                        if scb.wasButtonSelected {
+                            scb.clear()
+                        }
+                    }
+                }
+                else {
+                    setLabel.text = "Try again"
+                }
+            }
+            else {
+                setLabel.text = ""
+                print(numberOfSelectedCards)
+            }
+        }
+    }
     //UI Elements
     @IBOutlet weak var setLabel: DesignableLabel!
     @IBOutlet weak var flipLabel: UILabel!
@@ -32,28 +61,31 @@ class ViewController: UIViewController {
             numberOfUnHiddenButtons += numberOfIterations
         }
         else { //Replace current
-            
+            let cards = gameBrain.deal()
+            if cards.count == 0 {
+                setLabel.text = "No more cards"
+                return
+            }
+            var index = 0
+            for hiddenCard in setCardButtonCollection {
+                if hiddenCard.isEnabled == false && index < cards.count {
+                    hiddenCard.reinitCard(withCard: cards[index])
+                    index += 1
+                }
+                if index == 3 {
+                    break
+                }
+            }
         }
         print(numberOfUnHiddenButtons)
     }
     @IBAction func setCardClicked(_ sender: SetCardButton) {
-        var attributedString : NSAttributedString
-        let labelText = setLabel.attributedText
-        sender.onSelect()
-        if(sender.wasButtonSelected){
-            attributedString = (sender.setCard?.textAttr!)!
-            setLabel.attributedText = concatStrings(left: labelText!, right: attributedString)
+        if sender.onSelect() {
+            numberOfSelectedCards += 1
         }
         else {
-            
+            numberOfSelectedCards -= 1
         }
-        
-    }
-    func concatStrings(left: NSAttributedString, right: NSAttributedString) -> NSAttributedString{
-        let result = NSMutableAttributedString()
-        result.append(left)
-        result.append(right)
-        return result
     }
     override func viewDidLoad() {
         //init SetCardButtons with SetCards
@@ -88,15 +120,13 @@ class SetCardButton: DesignableButton {
     required init?(coder aDecoder: NSCoder) {
         wasButtonSelected = false
         super.init(coder: aDecoder)
-        
-        
     }
     override init(frame: CGRect) {
         wasButtonSelected = false
         super.init(frame: frame)
     }
     
-    func onSelect() {
+    func onSelect() -> Bool {
         if !wasButtonSelected {
             self.borderColor = UIColor.red
             self.borderWidth = 5
@@ -107,6 +137,32 @@ class SetCardButton: DesignableButton {
             self.borderWidth = 3
             wasButtonSelected = false
         }
+        return wasButtonSelected
+    }
+    
+    func clear(){
+        self.borderColor = UIColor.white
+        self.borderWidth = 3
+        wasButtonSelected = false
+        setCard = nil
+        self.isEnabled = false
+        setAttributedTitle(NSAttributedString(), for: UIControlState.normal)
+    }
+    
+    func isClearedCard() -> Bool {
+        if borderColor == UIColor.white {
+            return true
+        }
+        return false
+    }
+    
+    func reinitCard(withCard:SetCard){
+        self.borderColor = UIColor.black
+        self.borderWidth = 3
+        wasButtonSelected = false
+        setCard = withCard
+        self.isEnabled = true
+        setAttributedTitle(withCard.textAttr, for: UIControlState.normal)
     }
 }
 

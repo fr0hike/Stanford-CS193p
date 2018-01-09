@@ -30,4 +30,25 @@ struct SetModel {
             deltCards.append(tempCard)
         }
     }
+    /**
+     Deal 3 cards, return an array of them
+     Move cards into delt cards.
+     */
+    mutating func deal() -> [SetCard]{
+        var returnArry = [SetCard]()
+        var tempCard : SetCard
+        for index in 0...2 {
+            if deck.count > index { //Dont empty it!
+                tempCard = deck[index]
+                deck.remove(at: index)
+                returnArry.append(tempCard)
+                deltCards.append(tempCard)
+            }
+        }
+        return returnArry
+    }
+    
+    func matchCards(forArry: [SetCard]) -> Bool {
+        return true
+    }
 }

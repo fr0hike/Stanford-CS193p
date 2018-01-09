@@ -66,13 +66,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-45-qst">
-                                <rect key="frame" x="20" y="86" width="374" height="574"/>
+                                <rect key="frame" x="20" y="50" width="374" height="610"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-iY-QIb">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="95"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-Je-vno" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -87,7 +87,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-9R-axG" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -102,7 +102,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSo-4I-fUG" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -117,7 +117,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6G-62-K46" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -134,10 +134,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-sn-3Vm">
-                                        <rect key="frame" x="0.0" y="97" width="374" height="89"/>
+                                        <rect key="frame" x="0.0" y="103" width="374" height="95"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy3-lC-zO2" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -152,7 +152,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4E-eG-2Fj" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -167,7 +167,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-Af-UW0" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -182,7 +182,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-bt-5ud" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -199,10 +199,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ii3-Og-bvH">
-                                        <rect key="frame" x="0.0" y="194" width="374" height="89"/>
+                                        <rect key="frame" x="0.0" y="206" width="374" height="95"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-I9-4dM" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -217,7 +217,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-u4-kR1" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -232,7 +232,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxj-Wo-U7g" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -247,7 +247,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMI-Aq-l2l" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -264,10 +264,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-oh-lbA">
-                                        <rect key="frame" x="0.0" y="291" width="374" height="89"/>
+                                        <rect key="frame" x="0.0" y="309" width="374" height="95"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-Wh-4RW" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -282,7 +282,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvX-rh-Am0" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -297,7 +297,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-Xg-d0u" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -312,7 +312,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-TD-fkJ" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -329,10 +329,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WUz-e5-2YH">
-                                        <rect key="frame" x="0.0" y="388" width="374" height="89"/>
+                                        <rect key="frame" x="0.0" y="412" width="374" height="95"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MH-aU-hFb" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -347,7 +347,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUF-S5-As5" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -362,7 +362,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xJ-o9-PeD" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -377,7 +377,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psG-BR-aDx" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -394,10 +394,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zCb-c6-b5o">
-                                        <rect key="frame" x="0.0" y="485" width="374" height="89"/>
+                                        <rect key="frame" x="0.0" y="515" width="374" height="95"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfc-qt-wcS" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -412,7 +412,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DN-7Q-Mba" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -427,7 +427,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-ch-Jb4" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="89"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.666666666666686" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -442,7 +442,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyY-51-Tly" customClass="SetCardButton" customModule="Assignment_1___Set" customModuleProvider="target">
-                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="89"/>
+                                                <rect key="frame" x="286.66666666666669" y="0.0" width="87.333333333333314" height="95"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -460,8 +460,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQF-ZC-Lg1" customClass="DesignableLabel" customModule="Assignment_1___Set">
-                                <rect key="frame" x="20" y="40" width="374" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQF-ZC-Lg1" customClass="DesignableLabel" customModule="Assignment_1___Set">
+                                <rect key="frame" x="20" y="40" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
